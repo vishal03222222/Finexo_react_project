@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class ServiceSection extends Component {
   render() {
     return (
-      <section className="service_section layout_padding">
+      <section className="service_section layout_padding" >
         <div className="service_container">
           <div className="container">
             <div className="heading_container heading_center">

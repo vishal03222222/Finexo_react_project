@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class AboutSection extends Component {
   render() {
     return (
-      <section className="about_section layout_padding">
+      <section className="about_section layout_padding" style={{position:"relative"}}>
         <div className="container">
           <div className="heading_container heading_center">
             <h2>

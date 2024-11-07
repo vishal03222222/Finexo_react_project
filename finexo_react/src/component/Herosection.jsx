@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class HeroArea extends Component {
   render() {
     return (
-      <div className="hero_area" style={{position:"absolute"}}>
+      <div className="hero_area" style={{position:"relative"}}>
         <div className="hero_bg_box">
           <div className="bg_img_box">
             <img src="images/hero-bg.png" alt="" />
