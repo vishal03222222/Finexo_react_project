@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './App.css';
+import './App.css'
 import HeroArea from './component/Herosection';
 import ServiceSection from './component/Service';
 import AboutSection from './component/About';

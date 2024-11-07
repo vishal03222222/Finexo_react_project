@@ -3,13 +3,13 @@ import React, { Component } from 'react';
 class HeroArea extends Component {
   render() {
     return (
-      <div className="hero_area">
+      <div className="hero_area" style={{position:"absolute"}}>
         <div className="hero_bg_box">
           <div className="bg_img_box">
             <img src="images/hero-bg.png" alt="" />
           </div>
         </div>
-        
+
         <header className="header_section">
           <div className="container-fluid">
             <nav className="navbar navbar-expand-lg custom_nav-container">
