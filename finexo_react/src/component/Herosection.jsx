@@ -70,7 +70,7 @@ class HeroArea extends Component {
           </div>
         </header>
 
-        <section className="slider_section">
+        <section className="slider_section" style={{position:"relative"}}>
           <div id="customCarousel1" className="carousel slide" data-ride="carousel">
             <div className="carousel-inner">
               <div className="carousel-item active">
