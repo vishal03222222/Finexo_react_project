@@ -2,8 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 const Header = () => {
   return (
-    <div className="hero_area" style={{position:"relative"}}>
-     <header className="header_section">
+    
+     <header className="header_section" style={{position:"absolute"}}>
           <div className="container-fluid">
             <nav className="navbar navbar-expand-lg custom_nav-container">
               <a className="navbar-brand" href="index.html">
@@ -63,7 +63,7 @@ const Header = () => {
             </nav>
           </div>
         </header>
-  </div>
+  
   )
 }
 
