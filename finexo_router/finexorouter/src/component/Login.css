@@ -1,61 +1,90 @@
-import React, { Component } from 'react';
-import './Login.css';
-
-class Login extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      email: '',
-      password: '',
-    };
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
   }
-
-  handleInputChange = (event) => {
-    const { name, value } = event.target;
-    this.setState({ [name]: value });
-  };
-
-  handleSubmit = (event) => {
-    event.preventDefault();
-    // You can implement login logic here
-    console.log('Login attempt:', this.state);
-  };
-
-  render() {
-    return (
-      <div className="login-container">
-        <div className="login-card">
-          <h2 className="app-title">CryptoWallet</h2>
-          <form onSubmit={this.handleSubmit}>
-            <label htmlFor="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value={this.state.email}
-              onChange={this.handleInputChange}
-              placeholder="Enter your email"
-              required
-            />
-            <label htmlFor="password">Password</label>
-            <input
-              type="password"
-              id="password"
-              name="password"
-              value={this.state.password}
-              onChange={this.handleInputChange}
-              placeholder="Enter your password"
-              required
-            />
-            <button type="submit" className="login-button">Login</button>
-          </form>
-          <p className="register-link">
-            Don’t have an account? <a href="/register">Sign up</a>
-          </p>
-        </div>
-      </div>
-    );
+  
+  body {
+    background-color: #1c1c1e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #f1f1f1;
   }
-}
-
-export default Login;
+  
+  .login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .login-card {
+    background-color: #2c2c2e;
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  .app-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ffa726;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin: 10px 0 5px;
+    font-weight: 600;
+  }
+  
+  input {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #4b4b4d;
+    border-radius: 4px;
+    background-color: #3a3a3c;
+    color: #fff;
+  }
+  
+  input::placeholder {
+    color: #8e8e93;
+  }
+  
+  .login-button {
+    background-color: #ffa726;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #1c1c1e;
+    font-weight: bold;
+  }
+  
+  .login-button:hover {
+    background-color: #ff9800;
+  }
+  
+  .register-link {
+    margin-top: 20px;
+  }
+  
+  .register-link a {
+    color: #ffa726;
+    text-decoration: none;
+  }
+  
+  .register-link a:hover {
+    text-decoration: underline;
+  }
+  

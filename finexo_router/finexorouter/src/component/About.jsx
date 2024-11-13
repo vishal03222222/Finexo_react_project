@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import Header from './Header';
-<Header/>
+
+
 
 class AboutSection extends Component {
   
   render() {
-    <Header/>
+   
     return (
       <section className="about_section layout_padding" style={{position:"relative"}}>
         <div className="container">
