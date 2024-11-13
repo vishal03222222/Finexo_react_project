@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 
-
 class TeamSection extends Component {
   render() {
-    
     return (
       <section className="team_section layout_padding">
         <div className="container-fluid">

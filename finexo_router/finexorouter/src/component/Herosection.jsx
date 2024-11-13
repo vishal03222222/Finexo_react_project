@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 
 class HeroArea extends Component {
   render() {
@@ -31,40 +30,34 @@ class HeroArea extends Component {
               <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav">
                   <li className="nav-item active">
-                    {/* <a className="nav-link" href="index.html">
+                    <a className="nav-link" href="index.html">
                       Home <span className="sr-only">(current)</span>
-                      <Link to='/' className='nav-link'>Home</Link>
-                    </a> */}
-                     <Link to='/' className='nav-link'>Home</Link>
-                    
+                    </a>
                   </li>
                   <li className="nav-item">
-                    <Link to='/about' className='nav-link'>About</Link>
-                    
+                    <a className="nav-link" href="about.html">
+                      About
+                    </a>
                   </li>
                   <li className="nav-item">
-                    {/* <a className="nav-link" href="service.html">
+                    <a className="nav-link" href="service.html">
                       Services
-                    </a> */}
-                     <Link to='/Services' className='nav-link'>Services</Link>
+                    </a>
                   </li>
                   <li className="nav-item">
-                    {/* <a className="nav-link" href="why.html">
+                    <a className="nav-link" href="why.html">
                       Why Us
-                    </a> */}
-                    <Link to='/Why' className='nav-link'>Why Us</Link>
+                    </a>
                   </li>
                   <li className="nav-item">
-                    {/* <a className="nav-link" href="team.html">
+                    <a className="nav-link" href="team.html">
                       Team
-                    </a> */}
-                    <Link to='/Team' className='nav-link'>Team</Link>
+                    </a>
                   </li>
                   <li className="nav-item">
-                    {/* <a className="nav-link" href="#">
+                    <a className="nav-link" href="#">
                       <i className="fa fa-user" aria-hidden="true"></i> Login
-                    </a> */}
-                    <Link to='/Login' className='nav-link'>Login</Link>
+                    </a>
                   </li>
                   <form className="form-inline">
                     <button className="btn my-2 my-sm-0 nav_search-btn" type="submit">
