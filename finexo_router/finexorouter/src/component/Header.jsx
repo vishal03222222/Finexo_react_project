@@ -1,5 +1,5 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link, NavLink } from 'react-router-dom'
 const Header = () => {
   return (
     
@@ -22,31 +22,33 @@ const Header = () => {
               </button>
               <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav">
+                
+                   
                   <li className="nav-item active">
                   <Link to={'/'} className="nav-link">Home</Link>
-                    {/* <a className="nav-link" href="index.html">
-                      Home <span className="sr-only">(current)</span>
-                    </a> */}
+                    <a>
+                      hoe
+                    </a>
                   </li>
-                  <li className="nav-item">
+                  <li className="nav-item active">
                   <Link to={'about'} className="nav-link">About</Link>
                     
                   </li>
-                  <li className="nav-item">
-                    {/* <a className="nav-link" href="service.html">
-                      Services
-                    </a> */}
-                    <Link to={'about'} className="nav-link">About</Link>
+                  <li className="nav-item active">
+                    
+                    <Link to={'Services'} className="nav-link">Services</Link>
+                    
                   </li>
-                  <li className="nav-item">
-                    {/* <a className="nav-link" href="why.html">
-                      Why Us
-                    </a> */}
+                  <li className="nav-item active">
+                    
+                    <Link to={'Why'} className="nav-link" >Why Us</Link>
                   </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="team.html">
+                  <li className="nav-item active">
+                    {/* <a className="nav-link" href="team.html">
                       Team
-                    </a>
+                    </a> */}
+                    <Link to={'Team'} className="nav-link">Team</Link>
+
                   </li>
                   <li className="nav-item">
                     <a className="nav-link" href="#">

@@ -6,6 +6,7 @@ import Header from './Header';
 class AboutSection extends Component {
   
   render() {
+    <Header/>
     return (
       <section className="about_section layout_padding" style={{position:"relative"}}>
         <div className="container">

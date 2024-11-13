@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import Header from './Header';
 
 class TeamSection extends Component {
   render() {
+    <Header/>
     return (
       <section className="team_section layout_padding">
         <div className="container-fluid">

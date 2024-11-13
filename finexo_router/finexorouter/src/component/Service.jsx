@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
+import Header from './Header';
 
 class ServiceSection extends Component {
-  render() {
+
+    render() {
+      <Header/>
     return (
       <section className="service_section layout_padding" >
         <div className="service_container">

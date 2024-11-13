@@ -11,38 +11,38 @@ import InfoSection from './component/Info';
 import FooterSection from './component/Footer';
 import { Route, Routes } from 'react-router-dom';
 import Header from './component/Header';
+import Login from './component/Login';
 
 
 function App() {
   return (
     <div className="App">
-     <Header/>
-       <Routes>
-      
-        <Route path='/' element ={<HeroArea/>} />
-        
-        <Route path='/about' element ={<AboutSection/>} />
-        <Route path='/about' element ={<ServiceSection/>} />
-        <Route path='/about' element ={<WhyChooseUs/>} />
-        
-        <Route path='/about' element ={<TeamSection/>} />
-        <Route path='/about' element ={<ClientSection/>} />
-        <Route path='/about' element ={<InfoSection/>} />
-        <Route path='/about' element ={<TeamSection/>} />
-        
-        
-        
+      <Header />
+      <Routes>
+
+        <Route path='/' element={<HeroArea />} />
+
+        <Route path='/about' element={<AboutSection />} />
+        <Route path='/Service' element={<ServiceSection />} />
+        <Route path='/Why' element={<WhyChooseUs />} />
+
+        <Route path='/Team' element={<TeamSection />} />
+        <Route path='/about' element={<ClientSection />} />
+        <Route path='/about' element={<InfoSection />} />
+        <Route path='/Login' element={<Login />} />
+
+
       </Routes>
-      
-      <ServiceSection/>
-      <AboutSection/>
-      <WhyChooseUs/>
-      <TeamSection/>
-      <ClientSection/>
-      <InfoSection/>
-      <FooterSection/>
-     
-      
+
+      <ServiceSection />
+      <AboutSection />
+      <WhyChooseUs />
+      <TeamSection />
+      <ClientSection />
+      <InfoSection />
+      <FooterSection />
+
+
     </div>
   );
 }
